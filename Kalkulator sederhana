@@ -1,0 +1,45 @@
+def menu():
+    print ''
+    print "     Kalkulator"
+    print "===================="
+    a=input ("Masukan Bil 1:")
+    b=input ("Masukan Bil 2:")
+    print " "
+    print "1) Penambahan"
+    print "2) Pengurangan"
+    print "3) Perkalian"
+    print "4) Pembagian"
+    print "5) Perpangkatan"
+    p = input("     pilih[1-5] : ")
+    def penambahan (a,b):
+        print "     Hasil=", a+b
+    def pengurangan(a,b):
+        print "     Hasil=", a-b
+    def perkalian(a,b):
+        print "     Hasil=", a*b
+    def pembagian(a,b):
+        c= float(a)/float (b)
+        print "     Hasil=",c
+    def perpangkatan(a,b):
+        c= float(a)** float (b)
+        print "     Hasil=", c
+    if p == 1:
+        penambahan(a,b)
+    elif p == 2:
+        pengurangan(a,b)
+    elif p == 3:
+        perkalian(a,b)
+    elif p == 4:
+        pembagian(a,b)
+    elif p == 5:
+        perpangkatan (a,b)
+    else:
+        print "Salah Input"
+    t = raw_input ("Mau Hitung Lagi[y/t]?=")
+    if t == 'Y' or t == 'y':
+        print menu()
+    elif t == 'T' or t=='t':
+        print 'Terima kasih sudah menggunakan program '
+    else:
+        print 'Salah input'
+menu()
